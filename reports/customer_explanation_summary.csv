@@ -1,0 +1,4 @@
+Risk Group,Customer ID,Predicted Churn Probability,Actual Churn
+Highest Predicted Risk,CUST100923,0.9659156450502944,1
+Median Predicted Risk,CUST100371,0.9391041004586708,1
+Lowest Predicted Risk,CUST100267,0.2714956389224976,0

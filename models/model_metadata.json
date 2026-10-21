@@ -1,0 +1,68 @@
+{
+    "project": "Customer Churn Prediction",
+    "model_name": "Calibrated Random Forest",
+    "model_artifact": "03_model_artifact.joblib",
+    "positive_class": 1,
+    "training_customers": 960,
+    "test_customers": 240,
+    "input_features": [
+        "age",
+        "tenure_months",
+        "contract_type",
+        "internet_service",
+        "region",
+        "monthly_charges",
+        "payment_method",
+        "paperless_billing",
+        "dependents",
+        "support_plan",
+        "tech_support",
+        "complaints_last_12m",
+        "late_payments_last_12m",
+        "satisfaction_score",
+        "monthly_usage_gb",
+        "discount_pct",
+        "senior_citizen"
+    ],
+    "excluded_features": [
+        "customer_id",
+        "churn",
+        "total_charges"
+    ],
+    "random_state": 42,
+    "contact_capacity": 0.2,
+    "contact_strategy": "Top 20% ranked churn probabilities",
+    "calibration_method": "sigmoid",
+    "calibration_cv_folds": 3,
+    "best_hyperparameters": {
+        "model__n_estimators": 300,
+        "model__min_samples_split": 10,
+        "model__min_samples_leaf": 4,
+        "model__max_features": 0.7,
+        "model__max_depth": 10,
+        "model__class_weight": "balanced_subsample"
+    },
+    "test_metrics": {
+        "Accuracy": 0.875,
+        "Balanced Accuracy": 0.6091348265261309,
+        "Precision": 0.8898678414096917,
+        "Recall": 0.9758454106280193,
+        "F1 Score": 0.9308755760368663,
+        "ROC-AUC": 0.9156785243741764,
+        "PR-AUC": 0.9851308437519695,
+        "Brier Score": 0.08047909509566992,
+        "Log Loss": 0.2539074179735999
+    },
+    "versions": {
+        "python": "3.12.13",
+        "scikit_learn": "1.9.0",
+        "pandas": "3.0.5",
+        "numpy": "2.5.1",
+        "joblib": "1.5.3"
+    },
+    "limitations": [
+        "Monthly usage timing requires verification",
+        "Some usage records conflict with internet service categories",
+        "Predictions represent associations, not causal effects"
+    ]
+}

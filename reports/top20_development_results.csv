@@ -1,0 +1,2 @@
+Total Customers,Contact Budget,Actual Churners,Captured Churners,Precision at 20%,Recall at 20%,Random Expected Captures,Lift Over Random,Development Probability Cutoff
+960,192,829,191,0.9947916666666666,0.23039806996381182,165.8,1.1519903498190591,0.9925187353158745

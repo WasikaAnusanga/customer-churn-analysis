@@ -1,0 +1,7 @@
+Metric,Random Selection,Calibrated Random Forest
+Customers Contacted,192.0,192.0
+Churners Identified,165.8,190.0
+Expected Customers Retained,41.45,47.5
+Gross Benefit (CU),4974.0,5700.0
+Contact Cost (CU),960.0,960.0
+Net Benefit (CU),4014.0,4740.0
